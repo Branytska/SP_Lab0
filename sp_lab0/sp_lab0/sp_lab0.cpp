@@ -17,6 +17,8 @@ int main()
     unsigned int ui;
     long int li;
     unsigned long int uli;
+    float f;
+    double d;
 
     cout << "Type \t\t\t| Max \t\t| Min \t\t| Size" << "\n";
     cout << "signed char \t\t| " << SCHAR_MAX << " \t\t| " << SCHAR_MIN << " \t\t| " << sizeof(sc) << " bytes\n";
@@ -28,6 +30,8 @@ int main()
     cout << "unsidnet int \t\t| " << UINT_MAX << " \t| " << 0 << " \t\t| " << sizeof(ui) << " bytes\n";
     cout << "long int \t\t| " << LONG_MAX << " \t| " << LONG_MIN << " \t| " << sizeof(li) << " bytes\n";
     cout << "unsigment long ing \t| " << ULONG_MAX << " \t| " << 0 << " \t\t| " << sizeof(c) << " bytes\n";
+    cout << "float \t\t\t| " << numeric_limits<float>::max() << "\t| " << numeric_limits<float>::min() << "\t| " << sizeof(f) << " bytes\n";
+    cout << "double \t\t\t| " << numeric_limits<double>::max() << "\t| " << numeric_limits<double>::min() << "\t| " << sizeof(d) << " bytes\n";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
